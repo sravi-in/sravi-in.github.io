@@ -1,2 +1,2 @@
-# sravi-in.github.io
-Just a placeholder for now.
+# Credits
+This website is built using [Skeleton](http://getskeleton.com/) boilerplate and [onepage scroll](https://github.com/peachananr/onepage-scroll). The icons used in this page are from [The Noun Project](http://thenounproject.com/). [Toolbox](https://thenounproject.com/term/toolbox/81172/) by Norbert Kucsera, [Education](https://thenounproject.com/term/education/152968) by João Paulo and [Bag](https://thenounproject.com/term/bag/115526) by ▲▲▲.
