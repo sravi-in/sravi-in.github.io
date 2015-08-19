@@ -22,10 +22,12 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+ <script src="https://raw.githubusercontent.com/joaopereirawd/animatedModal.js/master/animatedModal.min.js"></script>
     
     <script type="text/javascript">
       
@@ -37,6 +39,8 @@
                 animationTime: 700,
 		responsiveFallback: 600
               });
+            
+            $("#alu").animatedModal();
 		});
 	</script>
 
@@ -96,7 +100,7 @@
             </div>
             
             <div class="row">
-                <div class="one-half column button sub-exp">
+                <a class="one-half column button sub-exp" href="#aluModal" id="alu">
                     <h2>Alcatel Lucent</h2>
                     <h4>Oct ‘14 - Current</h4>
                     <!--<h6 class="u-pull-left">Alcatel Lucent</h6>
@@ -105,8 +109,8 @@
                         <li>developer in session manager team for 4G LTE networks</li>
                         <li>porting &amp; integrating an open source DNS library for 7750 mobile gateway</li>
                     </ul>-->
-                </div>
-                <div class="one-half column button sub-exp">
+                </a>
+                <a class="one-half column button sub-exp" href="#aristaModal" id="arista">
                     <h2>Arista Networks</h2>
                     <h4>Jan ‘14 - Sep ‘14</h4>
                     <!--<h6 class="u-pull-left">Arista Networks</h6>
@@ -115,14 +119,14 @@
                         <li>developed a framework to gracefully take a switch out of (or put it back in) network for maintenance</li>
                         <li>added support for IP Mroute SNMP MIB (RFC 2932) in Arista EOS</li>
                     </ul>-->
-                </div>
+                </a>
             </div>
             <div class="row">
-                <div class="one-half column button sub-exp">
+                <a class="one-half column button sub-exp" href="#ciscoModal" id="cisco">
                     <h2>Cisco Systems</h2>
                     <h4>Aug ‘05 - Jan ‘14</h4>
-                </div>
-                <div class="one-half column button sub-exp">
+                </a>
+                <a class="one-half column button sub-exp" href="#untdModal" id="untd">
                     <h2>United Online</h2>
                     <h4>Jun ‘04 - Aug ‘05</h4>
                     <!--<h6 class="u-pull-left">United Online</h6>
@@ -133,7 +137,7 @@
                         <li>developed a set of perl scripts to report statistics about virus mails received every day</li>
                         <li>researched on spam samples to find new patterns and assist developers to control spam at various levels</li>
                     </ul>-->
-                </div>
+                </a>
             </div>
             
         
@@ -257,6 +261,18 @@
                 &copy; 2015 Ravi Surulikamu. Other <a href="https://github.com/sravi-in/sravi-in.github.io#Credits">credits.</a>
         </footer>
      </section>
+    </div>
+    
+    <div id="aluModal">
+        <div class="close-aluModal">
+            close
+        </div>
+        <div class="modal-content">
+            <ul>
+                <li>developer in session manager team for 4G LTE networks</li>
+                <li>porting &amp; integrating an open source DNS library for 7750 mobile gateway</li>
+            </ul>
+        </div>
     </div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
