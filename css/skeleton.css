@@ -393,7 +393,7 @@ hr {
 
 
 /* Vertically center the container - http://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-for-all-browsers */
-.home .container, .skills .container, .experience .container, .education .container  {
+.home .container, .skills .container, .experience .container, .education .container, .modal-content  {
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);

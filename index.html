@@ -19,41 +19,10 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
- <script src="https://raw.githubusercontent.com/joaopereirawd/animatedModal.js/master/animatedModal.min.js"></script>
-    
-    <script type="text/javascript">
-      
-		$(document).ready(function() {
-            $("#fullpage").onepage_scroll({
-                sectionContainer: "section",
-                loop: false,
-                responsiveFallback: false,
-                animationTime: 700,
-		responsiveFallback: 600
-              });
-            
-            $("#alu").animatedModal();
-		});
-	</script>
-
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-66415260-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
+  <link rel="stylesheet" href="css/animate.min.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -100,7 +69,7 @@
             </div>
             
             <div class="row">
-                <a class="one-half column button sub-exp" href="#aluModal" id="alu">
+                <a id="alu" href="#aluModal" class="one-half column button sub-exp">
                     <h2>Alcatel Lucent</h2>
                     <h4>Oct ‘14 - Current</h4>
                     <!--<h6 class="u-pull-left">Alcatel Lucent</h6>
@@ -267,13 +236,152 @@
         <div class="close-aluModal">
             close
         </div>
-        <div class="modal-content">
+        <div class="modal-content container">
             <ul>
                 <li>developer in session manager team for 4G LTE networks</li>
                 <li>porting &amp; integrating an open source DNS library for 7750 mobile gateway</li>
             </ul>
         </div>
     </div>
+    
+    <div id="aristaModal">
+        <div class="close-aristaModal">
+            close
+        </div>
+        <div class="modal-content container">
+            <ul>
+                <li>developed a framework to gracefully take a switch out of (or put it back in) network for maintenance</li>
+                <li>added support for IP Mroute SNMP MIB (RFC 2932) in Arista EOS</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="ciscoModal">
+        <div class="close-ciscoModal">
+            close
+        </div>
+        <div class="modal-content container">
+            <div class="row">
+                <div class="two columns">
+                    <em>designed &amp; developed</em>
+                </div>
+                <div class="ten columns">
+                    <ul>
+                        <li>a framework for integrating SigComp stack in CSCF</li>
+                        <li>a DNS client for Cisco ASR 5000/5500 platform</li>
+                        <li>a library for backing up and restoring provisioned lawful intercepts to file system</li>
+                        <li>a library for managing NAT/Firewall pinholes for Application Level Gateway</li>
+                        <li>a library for managing registered subscriber information in CSCF</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="two columns">
+                    <em>implemented</em>
+                </div>
+                <div class="ten columns">
+                     <ul>
+                         <li>NAT Traversal of MSRP media (RFC 6135)</li>
+                         <li>3GPP TS 32.409 performance counters for P-CSCF &amp; S-CSCF</li>
+                         <li>MD5 authentication (RFC 2617) support for IMS</li>
+                         <li>SIP registration support for RFC 3261 Proxy, P-CSCF &amp; S-CSCF (3GPP TS 24.229)</li>
+                     </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="two columns">
+                    <em>open source</em>
+                </div>
+                <div class="ten columns">
+                    <ul>
+                         <li>added presence static dictionary support (RFC 5112) for decoding SigComp message in wireshark</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="two columns">
+                    <em>test tools</em>
+                </div>
+                <div class="ten columns">
+                    <ul>
+                         <li>co-authored an automated test framework, Yatt </li>
+                         <li>developed a SigComp  test tool, sigctt</li>
+                         <li>developed a web-based test framework for performance testing of SIP/SigComp protocols</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="two columns">
+                    <em>others</em>
+                </div>
+                <div class="ten columns">
+                    <ul>
+                         <li>developed a solution for lawful interception for IPSG product</li>
+                         <li>developed a solution for control plane adaptation of Adaptive Bit Rate (ABR) video</li>
+                         <li>worked on video pacing for mobile videos</li>
+                         <li>developed a custom solution for E-CSCF to support legacy network</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div id="untdModal">
+        <div class="close-untdModal">
+            close
+        </div>
+        <div class="modal-content container">
+            <ul>
+                <li>engineer responsible for email operations &amp; technical escalations</li>
+                <li>developed a set of perl scripts to effectively control spam mails at various stages</li>
+                <li>developed a set of perl scripts to report statistics about virus mails received every day</li>
+                <li>researched on spam samples to find new patterns and assist developers to control spam at various levels</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#fullpage").onepage_scroll({
+                sectionContainer: "section",
+                loop: false,
+                responsiveFallback: false,
+                animationTime: 700,
+                responsiveFallback: 600
+            });
+            $("#alu").animatedModal({
+                modalTarget: 'aluModal'
+            });
+            $("#arista").animatedModal({
+                modalTarget: 'aristaModal'
+            });
+            $("#cisco").animatedModal({
+                modalTarget: 'ciscoModal'
+            });
+            $("#untd").animatedModal({
+                modalTarget: 'untdModal'
+            });
+
+        });
+	</script>
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-66415260-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
