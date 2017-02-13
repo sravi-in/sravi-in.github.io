@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Word Cards</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/opos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/recipes.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="card">
+            <h1 id="word">Word Cards</h1>
+            <h4 id="type"></h4>
+            <p id="meaning">Tap anywhere to get started and keep going</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+	$(function () { // this is a shortcut for document ready
+		var i = 0;
+		$("#card").on("click", function(event) {
+		    i = (i + 1) % recipes.length;	// increment your counter
+		    $("#word").text(recipes[i].name);
+		    $("#type").text(type[recipes[i].link]);
+		    $("#meaning").text(recipes[i].recipe);
+		});
+	});
+    </script>
+</body>
+</html>
