@@ -4,7 +4,6 @@
 
 html, body {
     background: #BDD6D3;
-    font-size: 65%; 
     height: 100%;
     margin: auto;
 }
@@ -28,7 +27,7 @@ h1 {
     font-family: 'Abril Fatface', cursive;
     font-weight: 400;
     color: snow;
-    font-size: 6em;
+    font-size: 4em;
     letter-spacing: 3px;
     margin-bottom: 10px;
 }
@@ -47,16 +46,4 @@ p {
     font-size: 1.2em;
     color: #34869E;
     letter-spacing: 2px;
-}
-
-@media (min-width: 400px) {
-    html,body {
-        font-size: 80%;
-    }
-}
-
-@media (min-width: 550px) {
-    html,body {
-        font-size: 100%;
-    }
 }
